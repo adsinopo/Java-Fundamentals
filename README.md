@@ -1,4 +1,4 @@
-#small edit haha CodingNomads Java Fundamentals
+# CodingNomads Java Fundamentals - adsinopo edit
 
 This project contains a variety of textbook examples and labs focused on Java labs_examples.fundamentals.
 
