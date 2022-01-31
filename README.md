@@ -1,4 +1,4 @@
-# CodingNomads Java Fundamentals - Nick's second edit
+# CodingNomads Java Fundamentals - Nick's second edit (branch)
 
 This project contains a variety of textbook examples and labs focused on Java labs_examples.fundamentals.
 
