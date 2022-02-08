@@ -116,3 +116,5 @@ Nicks-MBP:Terminal_testing nicksinopoli$ cat file1.txt
 This is file 1.
 Nicks-MBP:Terminal_testing nicksinopoli$ grep Teddy file1.txt
 Speak softly and carry a big stick...is what Teddy used to say.
+
+Finished.
