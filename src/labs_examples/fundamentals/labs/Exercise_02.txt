@@ -4,6 +4,7 @@
 
 Initializing git folder
     1. In CodingNomads folder, create new folder git_practice
+        mkdir git_practice
     2. Inside git_practice:
         a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
             the "git init" command within the git_practice folder.
@@ -32,3 +33,14 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+
+    mkdir git_practice2
+      633  cd git_practice2
+      634  vim gitfile2.txt
+      635  git init
+      636  ls -al
+      637  git remote add adsinopo https://github.com/adsinopo/git_practice2.git
+      638  git add file2.txt
+      639  git add gitfile2.txt
+      640  git commit -m "test run with ryan"
+      641  git push -u adsinopo master
