@@ -22,3 +22,97 @@ Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
        /Users/cadenmackenzie/Documents/CodingNomads
 
+
+Results:
+
+~ nicksinopoli$ cd ~/Documents/CodingNomads/
+CodingNomads nicksinopoli$ mkdir Terminal_testing
+CodingNomads nicksinopoli$ ls -al
+total 32
+drwxr-xr-x   9 nicksinopoli  staff   288 Feb  7 20:09 .
+drwx------@ 16 nicksinopoli  staff   512 Feb  7 20:09 ..
+-rw-r--r--@  1 nicksinopoli  staff  6148 Jan 31 16:03 .DS_Store
+-rw-r--r--   1 nicksinopoli  staff   565 Jan 31 15:40 HelloWorld.class
+-rw-r--r--   1 nicksinopoli  staff   209 Jan 31 15:40 HelloWorld.java
+drwxr-xr-x   2 nicksinopoli  staff    64 Feb  7 22:13 Terminal_testing
+drwxr-xr-x   5 nicksinopoli  staff   160 Feb  7 20:09 labs
+drwxr-xr-x   3 nicksinopoli  staff    96 Jan 13 09:22 projects
+drwxr-xr-x   2 nicksinopoli  staff    64 Jan  9 22:02 resources
+NCodingNomads nicksinopoli$ cd Terminal_testing
+Terminal_testing nicksinopoli$ vim file1.txt
+Terminal_testing nicksinopoli$ vim file2.txt
+Terminal_testing nicksinopoli$ vim file3.txt
+Terminal_testing nicksinopoli$ pwd
+/Users/nicksinopoli/Documents/CodingNomads/Terminal_testing
+Terminal_testing nicksinopoli$
+Nicks-MBP:Terminal_testing nicksinopoli$ ls -al
+total 24
+drwxr-xr-x  5 nicksinopoli  staff  160 Feb  7 22:15 .
+drwxr-xr-x  9 nicksinopoli  staff  288 Feb  7 22:14 ..
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:14 file1.txt
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:14 file2.txt
+-rw-r--r--  1 nicksinopoli  staff   19 Feb  7 22:15 file3.txt
+Nicks-MBP:Terminal_testing nicksinopoli$ mkdir New_folder
+Nicks-MBP:Terminal_testing nicksinopoli$ cp -r file1.txt New_folder
+Nicks-MBP:Terminal_testing nicksinopoli$ ls -al
+total 24
+drwxr-xr-x  6 nicksinopoli  staff  192 Feb  7 22:17 .
+drwxr-xr-x  9 nicksinopoli  staff  288 Feb  7 22:15 ..
+drwxr-xr-x  3 nicksinopoli  staff   96 Feb  7 22:17 New_folder
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:14 file1.txt
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:14 file2.txt
+-rw-r--r--  1 nicksinopoli  staff   19 Feb  7 22:15 file3.txt
+Nicks-MBP:Terminal_testing nicksinopoli$ cd New_folder
+Nicks-MBP:New_folder nicksinopoli$ ls -al
+total 8
+drwxr-xr-x  3 nicksinopoli  staff   96 Feb  7 22:17 .
+drwxr-xr-x  6 nicksinopoli  staff  192 Feb  7 22:17 ..
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:17 file1.txt
+Nicks-MBP:New_folder nicksinopoli$ cd ../
+Nicks-MBP:Terminal_testing nicksinopoli$ mv file2.txt New_folder
+Nicks-MBP:Terminal_testing nicksinopoli$ cd New_folder/
+Nicks-MBP:New_folder nicksinopoli$ ls -al
+total 16
+drwxr-xr-x  4 nicksinopoli  staff  128 Feb  7 22:18 .
+drwxr-xr-x  5 nicksinopoli  staff  160 Feb  7 22:18 ..
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:17 file1.txt
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:14 file2.txt
+Nicks-MBP:New_folder nicksinopoli$ cd ../
+Nicks-MBP:Terminal_testing nicksinopoli$ ls -al
+total 16
+drwxr-xr-x  5 nicksinopoli  staff  160 Feb  7 22:18 .
+drwxr-xr-x  9 nicksinopoli  staff  288 Feb  7 22:15 ..
+drwxr-xr-x  4 nicksinopoli  staff  128 Feb  7 22:18 New_folder
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:14 file1.txt
+-rw-r--r--  1 nicksinopoli  staff   19 Feb  7 22:15 file3.txt
+Nicks-MBP:Terminal_testing nicksinopoli$ rm -f file3.txt
+Nicks-MBP:Terminal_testing nicksinopoli$ mkdir delete_folder
+Nicks-MBP:Terminal_testing nicksinopoli$ ls -al
+total 8
+drwxr-xr-x  5 nicksinopoli  staff  160 Feb  7 22:20 .
+drwxr-xr-x  9 nicksinopoli  staff  288 Feb  7 22:20 ..
+drwxr-xr-x  4 nicksinopoli  staff  128 Feb  7 22:18 New_folder
+drwxr-xr-x  2 nicksinopoli  staff   64 Feb  7 22:20 delete_folder
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:14 file1.txt
+Nicks-MBP:Terminal_testing nicksinopoli$ rm -d delete_folder
+Nicks-MBP:Terminal_testing nicksinopoli$ ls -al
+total 8
+drwxr-xr-x  4 nicksinopoli  staff  128 Feb  7 22:20 .
+drwxr-xr-x  9 nicksinopoli  staff  288 Feb  7 22:20 ..
+drwxr-xr-x  4 nicksinopoli  staff  128 Feb  7 22:18 New_folder
+-rw-r--r--  1 nicksinopoli  staff   16 Feb  7 22:14 file1.txt
+Nicks-MBP:Terminal_testing nicksinopoli$ vim file1.txt
+Walking through the woods to grandmother's house we go.
+
+Speak softly and carry a big stick...is what Teddy used to say.
+
+This is file 1.
+~
+~
+~
+~
+"file1.txt" 1L, 16C
+Nicks-MBP:Terminal_testing nicksinopoli$ cat file1.txt
+This is file 1.
+Nicks-MBP:Terminal_testing nicksinopoli$ grep Teddy file1.txt
+Speak softly and carry a big stick...is what Teddy used to say.
