@@ -28,6 +28,8 @@ public class Exercise_04 {
         System.out.println("The byte data type is small, holding numbers up to " +127);
         short stack = 16;
         System.out.println("Short is a little larger, having a size up to " + stack + " bits.");
+        boolean pizza = true;
+        System.out.println("While it is " + pizza + " the boolean is the smallest. Only having a size of 1 bit.");
 
     }
 
