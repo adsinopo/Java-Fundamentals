@@ -7,6 +7,7 @@ public class Vehicle {
     public String make;
     public String model;
     public int year;
+    public String color;
 
     //You can't use String color because it only exists within someMethod
 
