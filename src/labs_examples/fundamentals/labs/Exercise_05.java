@@ -22,6 +22,13 @@ public class Exercise_05 {
         // please concatenate str & str2 and set the result to a new String variable below
         String str3 = "Hello, " + "the value of x is: " + x + "!";
         System.out.println(str3);
+        double d = 10;
+        int e = (int) d;
+        double f = 100.04;
+        long l = (long)f;
+        int p = (int)l;
+        System.out.println("Long value " + l);
+        System.out.println("int value " + p);
         // please demonstrate the use of any other method that is available to us in the String class
         // for example, replace(), substring(), contains(), indexOf() etc
         int search = "hello!".indexOf("e");
