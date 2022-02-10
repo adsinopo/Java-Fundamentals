@@ -17,7 +17,12 @@ public class Exercise_01 {
     public static void main(String[] args) {
 
         // write code here
-
+        int x = 10;
+        System.out.println("int equals 10");
+        double y = 22.49;
+        System.out.println("double equals 22.49");
+        char letter = 'A';
+        System.out.println("The first letter of the alphabet is " + letter);
     }
 }
 
