@@ -13,6 +13,16 @@ class LogicalOperators {
         // example of "OR"
         boolean a = true;
         boolean b = false;
+
+        int x = 5;
+        int y = 10;
+
+        if ((x++ == 6) && (y++ == 10)){
+            System.out.println("x equals " + x + " y equals " + y);
+
+        }
+
+
         if (a | b){
             System.out.println("a or b is true");
         }
