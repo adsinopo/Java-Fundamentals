@@ -23,7 +23,7 @@ public class Exercise_07 {
         // assign input to variable as int
         int days = scanner.nextInt();
         // write completed code here
-        long result = days * 86400;
+        long result = days * 24 * 60 * 60;
         System.out.println("There are " + result + " seconds in " + days + " day(s).");
     }
 }
