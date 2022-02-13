@@ -26,6 +26,20 @@ public class FlowControl {
 
             int i = someMethod(1);
             System.out.println("i = " + i);
+
+            //example for repl it
+        for(int a = 0; a < 10; a++){
+            if (a == 5 || a == 6){
+                continue;
+            }
+            System.out.println("a = " + a);
+        }
+        for(int b = 10; b > 0; b--){
+            if (b == 4){
+                break;
+            }
+            System.out.println("b = " + b);
+        }
     }
 
     public static int someMethod(int val) {
