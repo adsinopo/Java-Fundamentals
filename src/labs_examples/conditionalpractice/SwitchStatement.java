@@ -48,6 +48,7 @@ public class SwitchStatement {
         }
         // once you've got that done - run the switch statement with and
         // without the break statements for each case - what happens when we don't have break statements?
-
+        // ** when there's no break statements, it prints everything after the case it reaches **
+        // So if the case was '7', it would print 7 and 8-12 cases.
     }
 }
