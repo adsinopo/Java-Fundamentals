@@ -8,4 +8,17 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_09 {
+
+    public static void main(String[] args) {
+
+        int num = 0;
+        for(num = 10; num > 0; num--){
+            if(num == 4){
+                break;
+            }
+            System.out.println("num is " + num);
+        }
+
+    }
+
 }
