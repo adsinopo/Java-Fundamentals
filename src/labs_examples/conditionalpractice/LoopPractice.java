@@ -25,13 +25,13 @@ public class LoopPractice {
 //            }
 //        System.out.println(sum);
 
-        int num = 10;
+        int num = 0;
         int sum = 0;
-            while(num > 3){
-                sum += num;
-                num --;
-            }
-        System.out.println(sum);
+
+        for(num = 0; num < 10; num++){
+            sum += num;
+            System.out.println(sum);
+        }
     }
 
 }
