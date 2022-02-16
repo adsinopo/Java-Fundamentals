@@ -3,13 +3,15 @@ package labs_examples.conditionalpractice;
 public class NeedsMoreLoop {
 
     public static void main(String[] args) {
-        int val = 0;
 
-        for(int i = 0; i <= 100; i++){
+        int sum = 1;
 
-            val += i;
+        for(int val = 1; val < 6; val++){
+            sum *= val;
         }
-        System.out.println(val);
+        System.out.println(sum);
+
+
     }
 
 
