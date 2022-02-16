@@ -19,10 +19,24 @@ public class Exercise_07 {
 
     public static void main(String[] args) {
 
+        String vowels = "aeiou";
+        System.out.println("Please enter a word of your choice: ");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a word: ");
-
         String str = scanner.next();
-    }
 
+        int count = 0;
+
+        while(count < str.length()){
+            char c = str.charAt(count); // get a char at a given index
+            int i = vowels.indexOf(c); // get the index of a given character, within a string
+
+            if(i != -1){
+                System.out.println(c + " is the first vowel in " + str);
+                return;
+            }
+            count++;
+        }
+        System.out.println("The word has no vowels");
+
+    }
 }
