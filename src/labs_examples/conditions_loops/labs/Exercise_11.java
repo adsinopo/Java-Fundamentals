@@ -23,4 +23,31 @@ package labs_examples.conditions_loops.labs;
 
 public class Exercise_11 {
 
+    public static void main(String[] args) {
+
+//        int num = 1;
+//        int multiply = 1;
+//        int num2 = 1;
+
+        for(int num = 1; num <= 10; num++){
+            for(int num2 = 1; num2 <= 10; num2++){
+                int multiple = num2 * num;
+                if(multiple < 10){
+                    System.out.print(multiple + "  |");
+                }else if(multiple < 99){
+                    System.out.print(multiple + " |");
+                }else{
+                    System.out.print(multiple + "|");
+                }
+            }
+            System.out.println();
+//            System.out.println(num); // prints 1 |2 |3 |4 |5 |6 |7 |8 |9 |10 | on the first line
+//            for(num2 = 1; num2 <= 10; num2++){
+//                num2 += 2 * num;
+//                System.out.print(num2 + " |");
+
+        }
+    }
+
 }
+
