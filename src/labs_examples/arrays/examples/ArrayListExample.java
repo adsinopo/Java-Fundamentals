@@ -21,6 +21,17 @@ class ArrayListExample {
 
         // print out modified array list
         System.out.println("Now the arraylist has following elements:" + obj);
+        //Arrays are less memory than ArrayLists
+        //Arrays can only have one dimension
+
+        ArrayList <String> arrayList = new ArrayList<> ();
+
+        arrayList.add("My name is ");
+        arrayList.add("the real ");
+        arrayList.add("slim shady.");
+
+        String val = arrayList.get(2);
+        System.out.println(val);
 
 
     }
