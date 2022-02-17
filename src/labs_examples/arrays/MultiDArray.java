@@ -3,19 +3,26 @@ package labs_examples.arrays;
 public class MultiDArray {
     public static void main(String[] args) {
 
-        int[][] twoD = new int [4][7];
+        int multi[][] = new int[4][5];
+        int count = 0;
 
-        for (int i = 0; i < twoD.length; i++){
-            for(int j = 0; j < twoD[i].length; j++){
-                twoD[i][j] = i * j;
-                System.out.print(twoD[i][j] + " - ");
+        for (int i = 0; i < multi.length; i++) {
+            for (int j = 0; j < multi[i].length; j++) {
+                multi[i][j] = count;
+                count++;//populated
+                System.out.print(multi[i][j] + " - "); //printing each element
             }
             System.out.println();
-        }
-        // OUTPUT
-// 0 - 0 - 0 - 0 - 0 - 0 - 0 -
-// 0 - 1 - 2 - 3 - 4 - 5 - 6 -
-// 0 - 2 - 4 - 6 - 8 - 10 - 12 -
-// 0 - 3 - 6 - 9 - 12 - 15 - 18 -
+
+
+            // OUTPUT
+
+//        }
+//        for (int i = 0; i < multi.length; i++) {
+//            for (int j = 0; j < multi[i].length; j++) {
+//                System.out.print(multi[i][j] + " - ");
+//            }
+//            System.out.println();
+       }
     }
 }
