@@ -30,9 +30,15 @@ class ArrayListExample {
         arrayList.add("the real ");
         arrayList.add("slim shady.");
 
-        String val = arrayList.get(2);
-        System.out.println(val);
-
+        for (String s : arrayList){
+            System.out.println(s);
+        }
+        boolean check = arrayList.contains("slim shady");
+            if(check != true){
+                System.out.println("The word is not in the array list");
+            }else{
+                System.out.println("That word exists in the list.");
+            }
 
     }
 }
