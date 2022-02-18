@@ -26,7 +26,7 @@ class ArrayListExample {
 
         ArrayList <String> arrayList = new ArrayList<> ();
 
-        arrayList.add("My name is ");
+        arrayList.add("I am ");
         arrayList.add("the real ");
         arrayList.add("slim shady.");
         arrayList.add(" Just kidding.");
