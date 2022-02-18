@@ -33,7 +33,7 @@ class ArrayListExample {
 
         for (String s : arrayList){
             System.out.print(s);
-        }
+        } //prints string
 
         boolean check = arrayList.contains("Eminem");
             if(check != true){
