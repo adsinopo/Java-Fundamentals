@@ -42,5 +42,11 @@ class ArrayListExample {
                 System.out.println("That word exists in the list.");
             }
 //        arrayList.indexOf("slim shady.");
+        arrayList.remove(1);
+           arrayList.remove(2);
+        System.out.println("After removing the value at index 1, below is our new text.");
+        for (String s : arrayList){
+            System.out.print(s);
+        }
     }
 }
