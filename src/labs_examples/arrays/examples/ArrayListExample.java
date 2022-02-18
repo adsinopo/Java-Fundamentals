@@ -29,16 +29,18 @@ class ArrayListExample {
         arrayList.add("My name is ");
         arrayList.add("the real ");
         arrayList.add("slim shady.");
+//        arrayList.add("My name is ");
 
         for (String s : arrayList){
-            System.out.println(s);
+            System.out.print(s);
         }
-        boolean check = arrayList.contains("slim shady");
-            if(check != true){
-                System.out.println("The word is not in the array list");
-            }else{
-                System.out.println("That word exists in the list.");
-            }
 
+        boolean check = arrayList.contains("Eminem");
+            if(check != true){
+                System.out.println(" The word you entered does not in the array list.");
+            }else{
+                System.out.println(" That word exists in the list.");
+            }
+//        arrayList.indexOf("slim shady.");
     }
 }
