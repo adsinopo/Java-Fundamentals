@@ -30,6 +30,7 @@ class ArrayListExample {
         arrayList.add("the real ");
         arrayList.add("slim shady.");
         arrayList.add(" Just kidding.");
+        arrayList.add(" Unless.....");
 
         for (String s : arrayList){
             System.out.print(s);
