@@ -14,14 +14,16 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        int[] array= {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
         // write code here
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number from 1-10: ");
+        System.out.println("Enter a number 1-10: ");
 
-        int i = scanner.nextInt();
-        System.out.println("The number at index " + i + " is " + array[i] + ".");
+        int num = scanner.nextInt();
+
+
+
     }
 
 
