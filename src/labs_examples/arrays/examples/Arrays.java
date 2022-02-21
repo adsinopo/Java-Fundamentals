@@ -8,7 +8,6 @@ class Arrays {
         // declare and initialize array size 10
         int nums[] = new int[10];
         int min, max;
-
         // populate array
         nums[0] = 99;
         nums[1] = -10;
@@ -20,6 +19,8 @@ class Arrays {
         nums[7] = -9;
         nums[8] = 287;
         nums[9] = 49;
+
+        
 
         min = max = 0;
         // check for min and max

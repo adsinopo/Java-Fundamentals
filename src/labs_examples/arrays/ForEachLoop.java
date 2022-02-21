@@ -17,8 +17,25 @@ public class ForEachLoop {
             // here "val" is the actual value in "vals"
             // the for-each loop will iterate through the array from
             // top to bottom - on each loop the value of "val" will change
-            System.out.print(val + " - ");
+            System.out.println(val);
         }
+        System.out.println("--------------------");
+
+        int [][] twoDArray = new int[3][5];
+
+        for (int h = 0; h < twoDArray.length; h++){
+            for (int k = 0; k < twoDArray[h].length; k++){
+                twoDArray[h][k] = h * k;
+            }
+        }
+
+        for (int [] vals2 : twoDArray){
+            for (int k : vals){
+                System.out.print( k + " ");
+            }
+            System.out.println("***");
+        }
+
     }
 
 }
