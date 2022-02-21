@@ -20,7 +20,7 @@ class Arrays {
         nums[8] = 287;
         nums[9] = 49;
 
-        
+
 
         min = max = 0;
         // check for min and max
