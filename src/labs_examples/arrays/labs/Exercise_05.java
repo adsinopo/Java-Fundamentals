@@ -10,4 +10,16 @@ package labs_examples.arrays.labs;
 
 public class Exercise_05 {
 
+    public static void main(String[] args) {
+
+        int array[] = new int[]{
+                4, 7, 8, 12, 15, 14, 29, 33, 45, 87, 63, 99, 19, 87
+        };
+
+        int count = 0;
+        for (int i = array.length - 1; i >= 0; i -= 2){
+            System.out.print(array[i] + " - ");
+        }
+
+    }
 }
