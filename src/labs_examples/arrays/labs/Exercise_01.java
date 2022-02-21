@@ -38,7 +38,7 @@ public class Exercise_01 {
         }
         System.out.println("sum is " + sum);
 
-        average = (sum) / myArray.length;
+        average = (sum) / 10.00;
         System.out.println("The average is " + average);
 
     }
