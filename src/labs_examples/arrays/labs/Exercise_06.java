@@ -1,5 +1,8 @@
 package labs_examples.arrays.labs;
 
+
+import java.util.Collections;
+
 /**
  *  Reversing an array in place
  *
@@ -20,7 +23,10 @@ public class Exercise_06 {
         int temp;
 
         // Question: in the for loop below, why do we divide "nums.length" by 2?
-        for(int i = 0; i < nums.length ; i--){
+        for(int i = 0; i < nums.length / 2; i++){
+            temp = nums[i];
+            nums[i] = nums[nums.length - 1 - i];
+            nums[nums.length - 1 - i] = temp;
             // swap elements at indexes in array
             // you have two indices readily available for you to use "i" (which increments) and "nums.length"
             // you've also got this "temp" variable you can use to hold a value temporarily
@@ -30,6 +36,12 @@ public class Exercise_06 {
         for(int i : nums){
             System.out.print(i + " ");
         }
+
+        // very common technique
+//        temp = a; // a = 5, b = 10, temp = 5
+//        a = b; // a = 10, b = 10, temp = 5
+//        b = temp; // a = 10, b = 5, temp = 5
+
     }
 
 }
