@@ -1,2 +1,19 @@
-package labs_examples.class_practice;public class Person {
+package labs_examples.class_practice;
+
+
+// created by Nick Sinopoli
+public class Person {
+
+    // instance variable
+    int age;
+    double height;
+    String name;
+
+    // constructors
+    // ...
+
+    // methods
+    // ...
+
+
 }
