@@ -5,6 +5,8 @@ class ArrayDemo {
     public static void main(String[] args) {
         char[] alphabet = new char[26];
 
+//        String[]
+
         char i = 'A';
 
         for (int x = 0; x < 26; x++, i++){
