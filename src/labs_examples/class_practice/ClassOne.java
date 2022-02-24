@@ -20,7 +20,7 @@ public class ClassOne {
             obj.protectedVar = String.valueOf(4);
 //            private doesn't work
 //            obj.privateVar = String.valueOf(9);
-            
+
         }
     }
 
