@@ -6,17 +6,28 @@ package labs_examples.class_practice;
 public class Person {
 
     // instance variables
-    int age;
-    double height;
-    String name;
-
-    final double PI = 3.14;
+    public int age;
+    public double height;
+    public String name;
 
     // constructors
-    // ...
+    public Person(){}
+
+    public Person(int age, double height, String name){
+        this.age = age;
+        this.height = height;
+        this.name = name;
+    }
 
     // methods
-    // ...
 
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "age=" + age +
+                ", height=" + height +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
