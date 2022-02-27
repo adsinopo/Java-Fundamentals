@@ -11,6 +11,21 @@ public class Exercise_01 {
 
         // please create the methods as instructed below then
         // call each of those methods from here, within the main()
+        int a = 10;
+        int b = 2;
+        int c = countArgs("one", "two", "three");
+
+        int x = multiply(a, b);
+        int y = divide(a, b);
+        int z = howManySeconds(b);
+
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+        System.out.println(c);
+
+        joke();
+
 
     }
 
@@ -24,11 +39,11 @@ public class Exercise_01 {
     // 2) Create a static divide() method below that takes two int arguments (int a, int b) and
     //    returns the result of a / b
     public static int divide(int a, int b){
-        return a * b;
+        return a / b;
     }
 
     // 3) Create a static void method that will print of joke of your choice to the console
-    static void String(String[] args){
+    public static void joke(){
         System.out.println("Knock, Knock.");
         System.out.println("Who's there?");
         System.out.println("Interrupting Cow");
@@ -38,8 +53,7 @@ public class Exercise_01 {
     // 4) Create a static method that takes in a number in years (int years) as an argument
     //    and returns the number of seconds that number in years represents
     public static int howManySeconds(int years){
-        int seconds = years * 365 * 24 * 60 * 60;
-        return seconds;
+        return years * 365 * 24 * 60 * 60;
     }
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
