@@ -1,7 +1,5 @@
 package labs_examples.objects_classes_methods.labs.methods;
 
-import java.util.Scanner;
-
 /**
  * Created by ryandesmond - https://codingnomads.co
  */
@@ -12,8 +10,9 @@ public class Exercise_01 {
         // please create the methods as instructed below then
         // call each of those methods from here, within the main()
         int a = 10;
-        int b = 2;
+        int b = 6;
         int c = countArgs("one", "two", "three");
+        int f = 29;
 
         int x = multiply(a, b);
         int y = divide(a, b);
@@ -25,6 +24,11 @@ public class Exercise_01 {
         System.out.println(c);
 
         joke();
+
+        boolean d = isitPrime(b);
+        System.out.println("6 is " + d);
+        boolean e = isitPrime(f);
+        System.out.println("29 is " + e);
 
 
     }
@@ -64,6 +68,22 @@ public class Exercise_01 {
             count++;
         }
         return count;
+    }
+
+    public static boolean isitPrime(int a){
+        boolean isitPrime = true;
+        if (a <= 1){
+            isitPrime = false;
+        }
+        else{
+            for(int i = 2; i <= a / 2; i++){
+                if(a % i == 0){
+                    isitPrime = false;
+                }
+            }
+        }
+        return isitPrime;
+
     }
 
 
