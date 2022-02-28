@@ -35,6 +35,17 @@ public class MethodTraining {
 
         int j = largestNum(nums);
         System.out.println("The largest number is " + j);
+
+        //consonants
+
+        String name = "Nick";
+        int q = consonantCount(name);
+        System.out.println(q);
+
+        int w = 17;
+        boolean prime = isItPrime(w);
+        System.out.println(prime);
+
     }
 
 
@@ -51,10 +62,49 @@ public class MethodTraining {
        }
         return max;
     }
+    //4)
+    public static int consonantCount(String args) {
+        String vowels = "aeiou";
+        int count = 0;
+        int consonants = 0;
+        String str = "";
+        while(count < str.length()){
+            char c = str.charAt(count);
+            int i = vowels.indexOf(c);
 
-//    public static int consonantCount(String[] args) {
-//
-//    }
+            if(i == -1){
+                consonants++;
+            }
+            System.out.println("There are " + consonants + " in the word.");
+        }
+        return consonants;
+    }
+
+    //5
+    public static boolean isItPrime(int a){
+        boolean isItPrime = true;
+        if (a <= 1){
+            isItPrime = false;
+        }
+        else{
+            for (int i = 2; i <= a / 2; i++){
+                if(a % i == 0){
+                    isItPrime = false;
+                }
+            }
+        }
+        return isItPrime;
+    }
+    //6)
+    public static int minAndmax (int[] args){
+        int max = 0;
+        int min = 0;
+        min = max = 0;
+        for (int i = 0; i < args.length; i++{
+            if (args[i] <
+        }
+
+    }
 
 
 }
