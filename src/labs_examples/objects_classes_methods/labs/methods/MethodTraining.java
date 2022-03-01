@@ -2,6 +2,8 @@ package labs_examples.objects_classes_methods.labs.methods;
 
 import labs_examples.class_practice.Person;
 import labs_examples.methods.CustomMath;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MethodTraining {
     //Demonstrate Overloading
@@ -36,17 +38,17 @@ public class MethodTraining {
         int j = largestNum(nums);
         System.out.println("The largest number is " + j);
 
-        //consonants
-
+        //4 Solution
         String name = "Nick";
         int q = consonantCount(name);
         System.out.println("There are " + q + " consonants in the word.");
 
+        //5 Solution
         int w = 17;
         boolean prime = isItPrime(w);
         System.out.println(prime);
 
-        //6
+        //6 Solution
         int[] myArray = new int[5];
         int count = 0;
 
@@ -62,6 +64,14 @@ public class MethodTraining {
             int num = problemSix[i];
             System.out.print(num + " - ");
         }
+        //7 Solution
+        int maxNum = 33;
+        ArrayList<Integer> problemSeven = new ArrayList<Integer>(33);
+        int divisor1 = 2;
+        int divisor2 = 3;
+
+        problemSeven = mathDivisor(10, 2, 3);
+        System.out.println("The list is " + problemSeven);
 
     }
 
@@ -123,11 +133,33 @@ public class MethodTraining {
             if (temp > max) {
                 max = temp;
             }
-
         }
         int[] newArray = new int[2];
         newArray[0] = min;
         newArray[1] = max;
         return newArray;
+    }
+//    7) Write a method that takes 3 arguments (int maxNum, int divisor1, int divisor2) and returns an Integer Arraylist.
+//    In this method create an Integer ArrayList and populate it with each number between zero and maxNum that is
+//    divisible by both divisor1 and divisor2. Then return this ArrayList. After calling this method, print out the
+//    length of the returned list
+    public static ArrayList<Integer> mathDivisor(int maxNum, int divisor1, int divisor2){
+        ArrayList<Integer> nums = new ArrayList<Integer>(maxNum);
+//        nums.add(1);
+//        nums.add(2);
+//        nums.add(3);
+//        nums.add(4);
+//        nums.add(5);
+//        nums.add(6);
+
+        int count = 0;
+        for(int i = 0; i <= 33; i++){
+            nums.add(i);
+            count = nums.get(i);
+            if(count % divisor1 == 0 && count % divisor2 == 0){
+                System.out.println(count + " - ");
+            }
+        }
+        return nums;
     }
 }
