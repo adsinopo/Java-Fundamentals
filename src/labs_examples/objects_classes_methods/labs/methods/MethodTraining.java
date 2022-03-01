@@ -14,8 +14,8 @@ public class MethodTraining {
         double c = 6.2;
         double d = 10.0;
 
-        int x = CustomMath.multiply(a,b);
-        double y = CustomMath.multiply(c,d);
+        int x = CustomMath.multiply(a, b);
+        double y = CustomMath.multiply(c, d);
         System.out.println(x);
         System.out.println(y);
 
@@ -27,7 +27,7 @@ public class MethodTraining {
         System.out.println(nick.toString());
 
         //pass by value is what we've been doing
-        int [] nums = new int[4];
+        int[] nums = new int[4];
         nums[0] = 8;
         nums[1] = 1;
         nums[2] = 15;
@@ -40,11 +40,28 @@ public class MethodTraining {
 
         String name = "Nick";
         int q = consonantCount(name);
-        System.out.println(q);
+        System.out.println("There are " + q + " consonants in the word.");
 
         int w = 17;
         boolean prime = isItPrime(w);
         System.out.println(prime);
+
+        //6
+        int[] myArray = new int[5];
+        int count = 0;
+
+        myArray[0] = 14;
+        myArray[1] = 4;
+        myArray[2] = 87;
+        myArray[3] = 56;
+        myArray[4] = 22;
+
+        int [] problemSix = minAndmax(myArray);
+
+        for (int i = 0; i < problemSix.length; i++){
+            int num = problemSix[i];
+            System.out.print(num + " - ");
+        }
 
     }
 
@@ -53,58 +70,64 @@ public class MethodTraining {
         person.height = person.height + 1;
     }
 
-    public static int largestNum(int [] nums) {
+    public static int largestNum(int[] nums) {
         int max = 0;
-        for (int i = 0; i <= 3; i++){
-           if(nums[i] > max){
-               max = nums[i];
-           }
-       }
+        for (int i = 0; i <= 3; i++) {
+            if (nums[i] > max) {
+                max = nums[i];
+            }
+        }
         return max;
     }
+
     //4)
     public static int consonantCount(String args) {
-        String vowels = "aeiou";
-        int count = 0;
-        int consonants = 0;
-        String str = "";
-        while(count < str.length()){
-            char c = str.charAt(count);
-            int i = vowels.indexOf(c);
-
-            if(i == -1){
-                consonants++;
+        String word = args;
+        int vowels = 0;
+        for(int i = 0; i < word.length(); i++){
+            char ch = word.charAt(i);
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+                vowels++;
             }
-            System.out.println("There are " + consonants + " in the word.");
         }
-        return consonants;
+            return word.length() - vowels;
+
     }
 
     //5
-    public static boolean isItPrime(int a){
+    public static boolean isItPrime(int a) {
         boolean isItPrime = true;
-        if (a <= 1){
+        if (a <= 1) {
             isItPrime = false;
-        }
-        else{
-            for (int i = 2; i <= a / 2; i++){
-                if(a % i == 0){
+        } else {
+            for (int i = 2; i <= a / 2; i++) {
+                if (a % i == 0) {
                     isItPrime = false;
                 }
             }
         }
         return isItPrime;
     }
+
     //6)
-    public static int minAndmax (int[] args){
-        int max = 0;
-        int min = 0;
-        min = max = 0;
-        for (int i = 0; i < args.length; i++{
-            if (args[i] <
+    public static int[] minAndmax(int[] myArray) {
+        int temp;
+        int min = myArray[0];
+        int max = myArray[0];
+
+        for (int i = 0; i < myArray.length - 1; i++) {
+            temp = myArray[i];
+            if (temp < min) {
+                min = temp;
+            }
+            if (temp > max) {
+                max = temp;
+            }
+
         }
-
+        int[] newArray = new int[2];
+        newArray[0] = min;
+        newArray[1] = max;
+        return newArray;
     }
-
-
 }
