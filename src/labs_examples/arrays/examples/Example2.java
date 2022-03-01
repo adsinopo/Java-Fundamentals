@@ -7,13 +7,13 @@ class MinMax {
         int min, max;
 
         nums[0] = 99;
-        nums[1] = -10;
+        nums[1] = 2;
         nums[2] = 100123;
         nums[3] = 18;
-        nums[4] = -978;
+        nums[4] = 1;
         nums[5] = 5623;
         nums[6] = 463;
-        nums[7] = -9;
+        nums[7] = 14;
         nums[8] = 287;
         nums[9] = 49;
 
