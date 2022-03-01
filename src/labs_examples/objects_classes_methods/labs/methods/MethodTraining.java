@@ -64,15 +64,23 @@ public class MethodTraining {
             int num = problemSix[i];
             System.out.print(num + " - ");
         }
+        System.out.println();
         //7 Solution
         int maxNum = 33;
-        ArrayList<Integer> problemSeven = new ArrayList<Integer>(33);
+        ArrayList<Integer> problemSeven = new ArrayList<Integer>(maxNum);
         int divisor1 = 2;
         int divisor2 = 3;
 
-        problemSeven = mathDivisor(10, 2, 3);
-        System.out.println("The list is " + problemSeven);
+        problemSeven = mathDivisor(maxNum, divisor1, divisor2);
+        System.out.println("The new ArrayList is " + problemSeven);
+        System.out.println(problemSeven.size() + " numbers between 0 and " + maxNum + " are divisible by " + divisor1 + " and " + divisor2 + ".");
 
+        //8 solution
+        int [] problemEight = reverseArray(myArray);
+        for (int i = 0; i < problemEight.length; i++){
+            int newNum = problemEight[i];
+            System.out.print(newNum + " - ");
+        }
     }
 
 
@@ -145,21 +153,29 @@ public class MethodTraining {
 //    length of the returned list
     public static ArrayList<Integer> mathDivisor(int maxNum, int divisor1, int divisor2){
         ArrayList<Integer> nums = new ArrayList<Integer>(maxNum);
-//        nums.add(1);
-//        nums.add(2);
-//        nums.add(3);
-//        nums.add(4);
-//        nums.add(5);
-//        nums.add(6);
+        ArrayList<Integer> newNums = new ArrayList<>();
 
         int count = 0;
-        for(int i = 0; i <= 33; i++){
+        for(int i = 0; i <= maxNum; i++){
             nums.add(i);
             count = nums.get(i);
-            if(count % divisor1 == 0 && count % divisor2 == 0){
-                System.out.println(count + " - ");
+            if(count % divisor1 == 0 && count % divisor2 == 0 && count != 0){
+                newNums.add(count);
             }
         }
-        return nums;
+        return newNums;
+    }
+//    8) Write a method that will reverse an array in place use only one extra temp variable. For this exercise you cannot
+//    instantiate a second array. You must reverse the array in place using only one extra temp variable. Hint: this
+//    variable is used to temporarily store individual values in the array
+    public static int[] reverseArray(int[] thisArray){
+        int temp = 0;
+
+        for(int i = 0; i < thisArray.length / 2; i++){
+            temp = thisArray[i];
+            thisArray[i] = thisArray[thisArray.length - 1 - i];
+            thisArray[thisArray.length - 1 - i] = temp;
+        }
+        return thisArray;
     }
 }
