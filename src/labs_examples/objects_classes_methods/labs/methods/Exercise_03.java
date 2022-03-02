@@ -16,6 +16,7 @@ public class Exercise_03 {
     }
     public static int factorial(int x){
         int total;
+
         if (x == 1)
             return 1;
         total = factorial(x-1) * x;
