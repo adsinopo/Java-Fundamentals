@@ -8,6 +8,14 @@ class JetEngine{
         this.horsePower = horsePower;
     }
 
+    public double getHorsePower() {
+        return horsePower;
+    }
+
+    public void setHorsePower(double horsePower) {
+        this.horsePower = horsePower;
+    }
+
     @Override
     public String toString() {
         return "JetEngine{" +
@@ -21,6 +29,14 @@ class Name{
 
     public Name(String airline){
 
+        this.airline = airline;
+    }
+
+    public String getAirline() {
+        return airline;
+    }
+
+    public void setAirline(String airline) {
         this.airline = airline;
     }
 
@@ -40,6 +56,14 @@ class Crew{
         this.pilots = pilots;
     }
 
+    public int getPilots() {
+        return pilots;
+    }
+
+    public void setPilots(int pilots) {
+        this.pilots = pilots;
+    }
+
     @Override
     public String toString() {
         return "Crew{" +
@@ -53,6 +77,14 @@ class Cargo{
 
     public Cargo(int numOfBags){
 
+        this.numOfBags = numOfBags;
+    }
+
+    public int getNumOfBags() {
+        return numOfBags;
+    }
+
+    public void setNumOfBags(int numOfBags) {
         this.numOfBags = numOfBags;
     }
 
@@ -77,6 +109,15 @@ public class Airplane {
     double fuelCapacity;
 
     double currentFuelLevel;
+
+    public Airplane(){}
+
+    public Airplane(Name name, JetEngine jetEngine, Crew crew, Cargo cargo){
+        this.name = name;
+        this.jetEngine = jetEngine;
+        this.crew = crew;
+        this.cargo = cargo;
+    }
 
     public Airplane(Name name, JetEngine jetEngine, Crew crew, Cargo cargo, double fuelCapacity, double currentFuelLevel){
 
@@ -119,6 +160,22 @@ public class Airplane {
 
     public void setCargo(Cargo cargo) {
         this.cargo = cargo;
+    }
+
+    public double getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    public void setFuelCapacity(double fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    public double getCurrentFuelLevel() {
+        return currentFuelLevel;
+    }
+
+    public void setCurrentFuelLevel(double currentFuelLevel) {
+        this.currentFuelLevel = currentFuelLevel;
     }
 
     @Override
