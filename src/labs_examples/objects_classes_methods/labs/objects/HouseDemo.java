@@ -3,8 +3,7 @@ package labs_examples.objects_classes_methods.labs.objects;
 
 //Question for Jon
 public class HouseDemo {
-
-    public void main(String[] args) {
+    public static void main(String[] args) {
         Beds b = new Beds(3, "Mattress Firm");
         House h = new House("123 Sycamore Street");
         System.out.println(h.address + " has " + b.brand + " " + b.numOfBeds + " beds.");
@@ -12,7 +11,7 @@ public class HouseDemo {
     }
 
 
-    class Beds {
+    static class Beds {
 
         int numOfBeds;
         String brand;
@@ -23,7 +22,7 @@ public class HouseDemo {
         }
     }
 
-    class House{
+    static class House{
 
         String address;
         public House(String address){
