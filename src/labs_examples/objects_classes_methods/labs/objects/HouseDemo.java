@@ -10,24 +10,22 @@ public class HouseDemo {
 
     }
 
+}
+class Beds {
 
-    static class Beds {
+    int numOfBeds;
+    String brand;
 
-        int numOfBeds;
-        String brand;
-
-        public Beds(int numOfBeds, String brand) {
-            this.numOfBeds = numOfBeds;
-            this.brand = brand;
-        }
+    public Beds(int numOfBeds, String brand) {
+        this.numOfBeds = numOfBeds;
+        this.brand = brand;
     }
+}
 
-    static class House{
+class House{
 
-        String address;
-        public House(String address){
-            this.address = address;
-        }
-
+    String address;
+    public House(String address){
+        this.address = address;
     }
 }
