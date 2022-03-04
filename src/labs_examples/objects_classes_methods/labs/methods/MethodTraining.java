@@ -67,13 +67,13 @@ public class MethodTraining {
         System.out.println();
         //7 Solution
         int maxNum = 33;
-        ArrayList<Integer> problemSeven = new ArrayList<Integer>(maxNum);
+        ArrayList<Integer> newNums = new ArrayList<Integer>(maxNum);
         int divisor1 = 2;
         int divisor2 = 3;
 
-        problemSeven = mathDivisor(maxNum, divisor1, divisor2);
-        System.out.println("The new ArrayList is " + problemSeven);
-        System.out.println(problemSeven.size() + " numbers between 0 and " + maxNum + " are divisible by " + divisor1 + " and " + divisor2 + ".");
+        newNums = mathDivisor(maxNum, divisor1, divisor2);
+        System.out.println("The new ArrayList is " + newNums);
+        System.out.println(newNums.size() + " numbers between 0 and " + maxNum + " are divisible by " + divisor1 + " and " + divisor2 + ".");
 
         //8 solution
         int [] problemEight = reverseArray(myArray);
@@ -99,16 +99,18 @@ public class MethodTraining {
     }
 
     //4)
-    public static int consonantCount(String args) {
-        String word = args;
-        int vowels = 0;
+    public static int consonantCount(String word) {
+        String vowels = "aeiouAEIOU";
+        int consonantCount = 0;
         for(int i = 0; i < word.length(); i++){
+
             char ch = word.charAt(i);
-            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
-                vowels++;
+//            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+            if(vowels.indexOf(ch) == -1){
+                consonantCount++;
             }
         }
-            return word.length() - vowels;
+            return consonantCount;
 
     }
 
@@ -152,15 +154,18 @@ public class MethodTraining {
 //    divisible by both divisor1 and divisor2. Then return this ArrayList. After calling this method, print out the
 //    length of the returned list
     public static ArrayList<Integer> mathDivisor(int maxNum, int divisor1, int divisor2){
-        ArrayList<Integer> nums = new ArrayList<Integer>(maxNum);
+//        ArrayList<Integer> nums = new ArrayList<Integer>(maxNum);
         ArrayList<Integer> newNums = new ArrayList<>();
 
-        int count = 0;
+//        int count = 0;
         for(int i = 0; i <= maxNum; i++){
-            nums.add(i);
-            count = nums.get(i);
-            if(count % divisor1 == 0 && count % divisor2 == 0 && count != 0){
-                newNums.add(count);
+//            nums.add(i);
+//            count = nums.get(i);
+//            if(count % divisor1 == 0 && count % divisor2 == 0 && count != 0){
+//                newNums.add(count);
+//            }
+            if(i % divisor1 == 0 && i % divisor2 == 0 && i != 0){
+                newNums.add(i);
             }
         }
         return newNums;
