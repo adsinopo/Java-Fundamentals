@@ -42,9 +42,7 @@ class Name{
 
     @Override
     public String toString() {
-        return "Name{" +
-                "airline='" + airline + '\'' +
-                '}';
+        return airline;
     }
 }
 
@@ -90,9 +88,7 @@ class Cargo{
 
     @Override
     public String toString() {
-        return "Cargo{" +
-                "numOfBags=" + numOfBags +
-                '}';
+        return String.valueOf(numOfBags);
     }
 }
 
@@ -178,16 +174,24 @@ public class Airplane {
         this.currentFuelLevel = currentFuelLevel;
     }
 
+//    @Override
+//    public String toString() {
+//        return "Airplane{" +
+//                "name=" + name +
+//                ", jetEngine=" + jetEngine +
+//                ", crew=" + crew +
+//                ", cargo=" + cargo +
+//                ", fuelCapacity=" + fuelCapacity +
+//                ", currentFuelLevel=" + currentFuelLevel +
+//                '}';
+//    }
     @Override
-    public String toString() {
-        return "Airplane{" +
-                "name=" + name +
-                ", jetEngine=" + jetEngine +
-                ", crew=" + crew +
-                ", cargo=" + cargo +
-                ", fuelCapacity=" + fuelCapacity +
-                ", currentFuelLevel=" + currentFuelLevel +
-                '}';
+    public String toString(){
+        return "My plane's airline is " + name + ". It holds "
+                + cargo
+                + " passenger bags. It has " + crew.getPilots() + " pilots on board. The horsepower is "
+                + jetEngine.getHorsePower() + ".";
     }
+
 }
 
