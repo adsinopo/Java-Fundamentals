@@ -5,14 +5,21 @@ public class VehicleTwo {
     protected String make;
     protected String model;
     protected double miles;
+// a final variable or method CANNOT be Overridden
+    public final double PI = 3.1415926;
 
-    public VehicleTwo(){
+    public VehicleTwo() {
     }
 
     public VehicleTwo(String make, String model, double miles) {
         this.make = make;
         this.model = model;
         this.miles = miles;
+    }
+
+    public void accelerate(double mph){
+        System.out.println("vehicle accelerating by " + mph + " mph");
+        // steps to accelerate a vehicle
     }
 
     public String getMake() {
