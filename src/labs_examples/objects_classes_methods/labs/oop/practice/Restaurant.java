@@ -11,7 +11,7 @@ public class Restaurant {
         capacity = 0;
         style ="";
     }
-    //costructor
+    //constructor
     public Restaurant(int area, int capacity, String style){
         this.area = area;
         this.capacity = capacity;
@@ -22,7 +22,7 @@ class Gourmet extends Restaurant {
     private int waitTime;
     //default constructor
     public Gourmet(){
-        // the line below invokes teh default (empty) parent constructor
+        // the line below invokes the default (empty) parent constructor
         super();
         waitTime = 0;
     }
