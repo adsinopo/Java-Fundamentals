@@ -1,6 +1,6 @@
 package labs_examples.objects_classes_methods.labs.oop.practice;
 
-public class VehicleTwo {
+public class VehicleTwo implements MotorizedTransport {
 
     protected String make;
     protected String model;
@@ -20,6 +20,28 @@ public class VehicleTwo {
     public void accelerate(double mph){
         System.out.println("vehicle accelerating by " + mph + " mph");
         // steps to accelerate a vehicle
+    }
+
+    @Override
+    public boolean start() {
+        System.out.println("starting vehicle");
+        return true;
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("stopping vehicle");
+    }
+
+    @Override
+    public void accelerate(int mph) {
+        System.out.println("accelerating vehicle");
+    }
+
+    @Override
+
+    public void decelerate(int mph) {
+        System.out.println("decelerating vehicle");
     }
 
     public String getMake() {
