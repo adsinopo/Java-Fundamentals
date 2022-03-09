@@ -5,6 +5,9 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
  *
  * Your answer:
  *
+ * We have defined the object 'a'. It is the parent class. When it is called, a refers to the parent.
+ * NOW, if we create the method "B b = new B();"
+ * And write a SOUT method for 'b.i', then 20 will print.
  */
 class A {
     int i = 10;
@@ -18,7 +21,9 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
         A a = new B();
+        B b = new B();
 
         System.out.println(a.i);
+        System.out.println(b.i);
     }
 }
