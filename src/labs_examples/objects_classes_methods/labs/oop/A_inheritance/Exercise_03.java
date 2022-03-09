@@ -4,7 +4,8 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
  * Why does the output print in the order it does?
  *
  * You answer:
- *
+ * Class A is the parent constructor.
+ * Classes B and C are subclasses, therefore the parent comes first in line before the others.
  */
 
 class A_1 {
