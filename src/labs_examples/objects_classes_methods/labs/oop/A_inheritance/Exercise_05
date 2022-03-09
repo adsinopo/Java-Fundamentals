@@ -1,7 +1,10 @@
 
 Without running the code below, please tell me what will print. Why?
+"Parent called"
+"Child called"
 
-
+There is no 'void' keyword,
+so running the code will print the parent class before the child class.
 
 
 public class InheritanceTest
