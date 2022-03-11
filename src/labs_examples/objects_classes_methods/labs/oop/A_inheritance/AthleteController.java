@@ -6,6 +6,9 @@ public class AthleteController {
 
     public static void main(String[] args) {
 
+        //player2 is a variable of type football player
+        //variable declaration
+        FootballPlayer player2;
         FootballPlayer footballPlayer = new FootballPlayer("Tom Brady", 43, 200, 74.0, "NFL", "Michigan",
                 22, false, "Quarterback",
                 "Buccaneers", 15, 3);
@@ -22,5 +25,7 @@ public class AthleteController {
                 + " " + basketballPlayer.getMvp_awards());
         basketballPlayer.introduction();
 
+        //variable definition
+        player2 = new FootballPlayer();
     }
 }
