@@ -6,7 +6,7 @@ public class ListPractice {
         ArrayList<Integer> myList = new ArrayList<>();
 
         int count = 0;
-        for(int i = 0; i < myList.size(); i++){
+        for (int i = 0; i < myList.size(); i++) {
             count++;
         }
         System.out.println(count + " - ");
