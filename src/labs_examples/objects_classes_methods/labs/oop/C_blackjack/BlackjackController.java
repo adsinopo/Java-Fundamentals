@@ -7,6 +7,5 @@ public class BlackjackController {
             System.out.println(card);
 
         }
-
     }
 }

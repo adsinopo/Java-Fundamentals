@@ -5,14 +5,14 @@ public class Player {
     Hand hand;
     int potValue;
 
-    public Player(){
-
-    }
-
     public Player(String name, Hand hand, int potValue) {
         this.name = name;
         this.hand = hand;
         this.potValue = potValue;
+    }
+
+    public Player() {
+
     }
 
     public String getName() {
@@ -37,14 +37,5 @@ public class Player {
 
     public void setPotValue(int potValue) {
         this.potValue = potValue;
-    }
-
-    @Override
-    public String toString() {
-        return "Player{" +
-                "name='" + name + '\'' +
-                ", hand=" + hand +
-                ", potValue=" + potValue +
-                '}';
     }
 }

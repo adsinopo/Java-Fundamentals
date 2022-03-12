@@ -1,7 +1,6 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Deck {
     //cards is a variable of type Card[]
@@ -28,6 +27,7 @@ public class Deck {
 
         }while (usedCards.contains(cards[random_card_index]));
 
-        Hand newHand = new Hand(cards[random_card_index]);
+        player.hand.playerHand.add(cards[random_card_index]);
+        usedCards.add(random_card_index);
             }
 }
