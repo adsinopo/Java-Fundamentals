@@ -2,24 +2,24 @@ package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 import java.util.ArrayList;
 
 public class Hand {
-    ArrayList<Card> cards;
+    ArrayList<Hand> hand;
     int handValue;
 
-    public Hand(){
+    public Hand(Card card){
 
     }
 
-    public Hand(ArrayList<Card> cards, int handValue) {
-        this.cards = cards;
+    public Hand(ArrayList<Hand> hand, int handValue) {
+        this.hand = hand;
         this.handValue = handValue;
     }
 
-    public ArrayList<Card> getCards() {
-        return cards;
+    public ArrayList<Hand> getHand() {
+        return hand;
     }
 
     public void setCards(ArrayList<Card> cards) {
-        this.cards = cards;
+        this.hand = hand;
     }
 
     public int getHandValue() {
@@ -33,7 +33,7 @@ public class Hand {
     @Override
     public String toString() {
         return "Hand{" +
-                "cards=" + cards +
+                "hand" + hand +
                 ", handValue=" + handValue +
                 '}';
     }
