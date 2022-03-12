@@ -1,12 +1,12 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Deck {
     //cards is a variable of type Card[]
     //variable declared
     Card[] cards = new Card[52];
-    String[] names = new String[5];
     ArrayList<Integer> usedCards;
 
     public Deck() {
@@ -18,10 +18,16 @@ public class Deck {
                 index++;
             }
         }
-        this.usedCards = new ArrayList<Integer> ();
+        this.usedCards = new ArrayList<Integer>();
     }
-    public void deal(Player player){
-        int random_card_index = (int)(Math.random() * 52);
-        System.out.println(cards[random_card_index]);
-    }
+
+    public void deal(Player player) {
+        int random_card_index = (int) (Math.random() * 52);
+        do {
+        random_card_index = (int) (Math.random() * 52);
+
+        }while (usedCards.contains(cards[random_card_index]));
+
+        Hand newHand = new Hand(cards[random_card_index]);
+            }
 }
