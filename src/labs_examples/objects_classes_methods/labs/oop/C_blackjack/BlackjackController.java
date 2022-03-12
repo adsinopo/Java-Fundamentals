@@ -5,6 +5,8 @@ public class BlackjackController {
         Deck deck = new Deck();
         for(Card card : deck.cards){
             System.out.println(card);
+
         }
+
     }
 }
