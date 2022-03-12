@@ -7,6 +7,7 @@ public class Card {
     int suit;
     int rank;
     //TODO: Add a ranks array
+    int[] ranks = new int[]{1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
     public Card(int suit, int rank) {
         this.suit = suit;
