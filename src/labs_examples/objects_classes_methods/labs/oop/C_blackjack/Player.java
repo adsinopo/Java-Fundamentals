@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 
+import sun.awt.util.IdentityArrayList;
+
 public class Player {
     String name;
     Hand hand;
@@ -13,6 +15,12 @@ public class Player {
 
     public Player() {
 
+    }
+
+    public void computerAI(Player player){
+        if(player.hand.handValue < 16){
+            Deck deck = new Deck();
+        }
     }
 
     public String getName() {

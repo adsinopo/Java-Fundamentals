@@ -13,27 +13,17 @@ public class Hand {
         this.handValue = handValue;
     }
 
-    public ArrayList<Card> getPlayerHand() {
-        return playerHand;
+    //might need help on this
+    public void calculateScore(int handValue){
+       playerHand.get(2);
     }
 
-    public void setPlayerHand(ArrayList<Card> playerHand) {
-        this.playerHand = playerHand;
-    }
-
-    public int getHandValue() {
-        return handValue;
-    }
-
-    public void setHandValue(int handValue) {
-        this.handValue = handValue;
-    }
-
-    @Override
-    public String toString() {
-        return "Hand{" +
-                "playerHand=" + playerHand +
-                ", handValue=" + handValue +
-                '}';
+    //returns true if you have busted
+    public boolean greaterThan(int handValue){
+        if(handValue > 21){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
