@@ -13,7 +13,11 @@ public class Deck {
         int index = 0;
         for (int suit = 0; suit < 4; suit++) {
             for (int rank = 1; rank <= 13; rank++) {
-                this.cards[index] = new Card(suit, rank);
+                int value = rank;
+                if(rank >= 10){
+                    value = 10;
+                }
+                this.cards[index] = new Card(suit, rank, value);
                 index++;
             }
         }
