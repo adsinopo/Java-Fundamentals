@@ -7,5 +7,10 @@ public class BlackjackController {
             System.out.println(card);
 
         }
+        Player player1;
+        player1 = new Player();
+        deck.deal(player1);
+        System.out.println(player1.getHand());
+
     }
 }

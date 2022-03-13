@@ -8,14 +8,29 @@ public class Card {
     int rank;
     //TODO: Add a ranks array
     int[] ranks = new int[]{1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+    public static int value;
 
-    public Card(int suit, int rank) {
+
+    public Card(int suit, int rank, int value) {
         this.suit = suit;
+        this.rank = rank;
+        this.value = value;
+    }
+
+    public Card(int rank) {
         this.rank = rank;
     }
 
     public Card() {
 
+    }
+
+    public static int getValue() {
+        return value;
+    }
+
+    public static void setValue(int value) {
+        Card.value = value;
     }
 
     public int getSuit() {
@@ -39,6 +54,6 @@ public class Card {
         return "Card{" +
                 "suit=" + suits[suit] +
                 ", rank=" + rank +
-                '}';
+                ", value=" + value + "}";
     }
 }
