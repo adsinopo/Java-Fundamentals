@@ -7,9 +7,9 @@ public class Player {
     Hand hand;
     int potValue;
 
-    public Player(String name, Hand hand, int potValue) {
+    public Player(String name, int potValue) {
         this.name = name;
-        this.hand = hand;
+        this.hand = new Hand();
         this.potValue = potValue;
     }
 
@@ -17,9 +17,11 @@ public class Player {
 
     }
 
-    public void computerAI(Player player){
-        if(player.hand.handValue < 16){
-            Deck deck = new Deck();
+    public boolean computerAI(){
+        if(hand.handValue < 16){
+            return true;
+        }else{
+            return false;
         }
     }
 
