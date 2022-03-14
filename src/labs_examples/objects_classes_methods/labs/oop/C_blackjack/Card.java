@@ -8,7 +8,7 @@ public class Card {
     int rank;
     //TODO: Add a ranks array
     int[] ranks = new int[]{1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-    public static int value;
+    int value;
 
 
     public Card(int suit, int rank, int value) {
@@ -25,12 +25,12 @@ public class Card {
 
     }
 
-    public static int getValue() {
+    public int getValue() {
         return value;
     }
 
-    public static void setValue(int value) {
-        Card.value = value;
+    public void setValue(int value) {
+        this.value = value;
     }
 
     public int getSuit() {
