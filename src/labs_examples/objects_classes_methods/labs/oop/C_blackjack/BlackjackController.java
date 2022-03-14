@@ -8,7 +8,9 @@ public class BlackjackController {
 
         }
         Player player1;
-        player1 = new Player();
+        player1 = new Player("Jon", 100);
+        deck.deal(player1);
+        System.out.println(player1.getHand());
         deck.deal(player1);
         System.out.println(player1.getHand());
 
