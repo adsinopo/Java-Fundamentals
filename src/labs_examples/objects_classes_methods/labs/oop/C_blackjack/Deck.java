@@ -14,7 +14,7 @@ public class Deck {
         for (int suit = 0; suit < 4; suit++) {
             for (int rank = 1; rank <= 13; rank++) {
                 int value = rank;
-                if(rank >= 10){
+                if (rank >= 10) {
                     value = 10;
                 }
                 this.cards[index] = new Card(suit, rank, value);
@@ -27,11 +27,12 @@ public class Deck {
     public void deal(Player player) {
         int random_card_index = (int) (Math.random() * 52);
         do {
-        random_card_index = (int) (Math.random() * 52);
+            random_card_index = (int) (Math.random() * 52);
 
-        }while (usedCards.contains(cards[random_card_index]));
+        } while (usedCards.contains(cards[random_card_index]));
 
         player.hand.playerHand.add(cards[random_card_index]);
         usedCards.add(random_card_index);
-            }
+        player.hand.calculateScore();
+    }
 }
