@@ -39,9 +39,7 @@ public class Hand {
 
     @Override
     public String toString() {
-        return "Hand{" +
-                "playerHand=" + playerHand +
-                ", handValue=" + handValue +
-                '}';
+        return playerHand +
+                " your hand is worth " + handValue + " points.";
     }
 }

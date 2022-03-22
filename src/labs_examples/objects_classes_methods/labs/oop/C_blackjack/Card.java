@@ -51,9 +51,10 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
-                "suit=" + suits[suit] +
-                ", rank=" + rank +
-                ", value=" + value + "}";
+//        return "Card{" +
+//                "suit=" + suits[suit] +
+//                ", rank=" + rank +
+//                ", value=" + value + "}";
+        return "The " + rank + " of " + suits[suit] + " 's";
     }
 }
