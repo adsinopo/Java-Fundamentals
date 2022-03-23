@@ -17,7 +17,7 @@ public class BlackjackController {
         System.out.print("Enter your bet: ");
 
 //        Where do i put this???
-        do{
+//        do{
             Scanner scanner1 = new Scanner(System.in);
             int playerBet;
             double computerBet;
@@ -76,6 +76,6 @@ public class BlackjackController {
             }
             System.out.println("The computer has " + computer.potValue + " chips.");
             System.out.println("You have " + player1.potValue + " chips.");
-        } while (player1.potValue > 0 && computer.potValue > 0);
+//        } while (player1.potValue > 0 && computer.potValue > 0);
     }
 }
