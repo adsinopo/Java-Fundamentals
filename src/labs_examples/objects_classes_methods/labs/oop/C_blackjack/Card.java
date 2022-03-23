@@ -7,7 +7,8 @@ public class Card {
     int suit;
     int rank;
     //TODO: Add a ranks array
-    int[] ranks = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+    String[] ranks = new String[]{"Ace", "Two", "Three", "Four", "Five", "Six", "Seven",
+            "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
     int value;
 //    int[] value = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10};
 
@@ -56,6 +57,6 @@ public class Card {
 //                "suit=" + suits[suit] +
 //                ", rank=" + rank +
 //                ", value=" + value + "}";
-        return "The " + rank + " of " + suits[suit] + " 's";
+        return "The " + ranks[rank - 1] + " of " + suits[suit] + "'s";
     }
 }

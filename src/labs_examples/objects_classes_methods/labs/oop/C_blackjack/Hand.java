@@ -29,12 +29,8 @@ public class Hand {
     }
 
     //returns true if you have busted
-    public boolean greaterThan(){
-        if(handValue > 21){
-            return true;
-        }else{
-            return false;
-        }
+    public boolean busted(){
+        return handValue > 21;
     }
 
     @Override
