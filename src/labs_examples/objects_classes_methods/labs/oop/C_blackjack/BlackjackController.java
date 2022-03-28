@@ -9,16 +9,16 @@ public class BlackjackController {
     }
 
     public static void playBlackJack() {
+        //This creates the deck and the players
         Deck deck = new Deck();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your name: ");
         Player player1 = new Player(scanner.next(), 100);
         Player computer = new Player("Computer", 100);
-//        System.out.print("Enter your bet: ");
 
 
         do{
-//            Deck deck = new Deck();
+            //This is the beginning of the game
             Scanner scanner1 = new Scanner(System.in);
             System.out.print("Enter your bet: ");
             int playerBet;
@@ -27,6 +27,7 @@ public class BlackjackController {
             computerBet = playerBet;
             System.out.println("The computer bets " + computerBet);
 
+            //Dealing the hands
             deck.deal(player1);
             deck.deal(computer);
             deck.deal(player1);
@@ -87,6 +88,8 @@ public class BlackjackController {
             computer.hand.playerHand.clear();
             deck.usedCards.clear();
 
+
+            //Game will continue until either player loses all of their money
         } while (player1.potValue > 0 && computer.potValue > 0);
         if (player1.potValue == 0) {
             System.out.println("Sorry you lost all of your money :(. Time to go to the ATM.");
