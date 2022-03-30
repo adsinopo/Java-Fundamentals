@@ -37,7 +37,7 @@ public class BlackjackController {
             int playerBet;
             double computerBet;
             playerBet = scanner.nextInt();
-            if (computer.potValue < playerBet) {
+            if (playerBet > computer.potValue) {
                 computerBet = computer.potValue;
             } else {
                 computerBet = playerBet;
