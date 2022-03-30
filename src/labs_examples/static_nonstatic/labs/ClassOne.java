@@ -33,7 +33,7 @@ public class ClassOne {
         Nick();
         // A non-static method calling a static method in another class
         // (call the class, use the dot operator, call the method)
-        ClassTwo.addition(10, 15);
+        ClassTwo.addition(10, 2);
     }
 
     public static void Nick(){
