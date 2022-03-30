@@ -1,7 +1,4 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
-
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ResultTreeType;
-
 import java.util.Scanner;
 
 public class BlackjackController {
@@ -25,9 +22,6 @@ public class BlackjackController {
         System.out.print("Enter your name: ");
         Player player1 = new Player(scanner.next(), 100);
         Player computer = new Player("Computer", 100);
-//        int playerWins = 0;
-//        int computerWins = 0;
-//        Tracker tracker = new Tracker();
 
         do {
             Tracker tracker = new Tracker();
@@ -74,16 +68,13 @@ public class BlackjackController {
                 System.out.println("Congratulations " + player1.getName() + "! You win!");
                 player1.potValue += computerBet;
                 computer.potValue -= computerBet;
+                // The player garners a win
                 Result result = new Result();
-                int playerWins = result.playerWins;
-//                System.out.println(player1.getName() + " has " + result.playerWins + " win(s)");
             } else if (player1.hand.handValue < computer.hand.handValue && computer.hand.busted()) {
                 System.out.println("Congratulations " + player1.getName() + "! You win!");
                 player1.potValue += computerBet;
                 computer.potValue -= computerBet;
                 Result result = new Result();
-                int playerWins = result.playerWins;
-//                System.out.println(player1.getName() + " has " + result.playerWins + " win(s)");
             } else if (player1.hand.busted() && computer.hand.busted()){
                 System.out.println("Sorry you both lose! The house wins!");
                 computer.potValue -= computerBet;
@@ -92,16 +83,13 @@ public class BlackjackController {
                 System.out.println("Sorry " + player1.getName() + "! You lose this time....");
                 computer.potValue += playerBet;
                 player1.potValue -= playerBet;
+                // The computer garners a win
                 otherResult other = new otherResult();
-                int computerWins = other.computerWins;
-//                System.out.println("The computer has " + computerWins + " win(s)");
             } else if (player1.hand.handValue > computer.hand.handValue && player1.hand.busted()) {
                 System.out.println("Sorry " + player1.getName() + "! You lose this time....");
                 computer.potValue += playerBet;
                 player1.potValue -= playerBet;
                 otherResult other = new otherResult();
-                int computerWins = other.computerWins;
-//                System.out.println("The computer has " + computerWins + " win(s)");
             } else if (player1.hand.handValue == computer.hand.handValue && (!player1.hand.busted() && !computer.hand.busted())) {
                 System.out.println("You tied! Split pot.");
                 // No one wins any money
