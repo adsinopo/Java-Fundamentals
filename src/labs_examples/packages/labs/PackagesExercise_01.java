@@ -1,4 +1,5 @@
 package labs_examples.packages.labs;
+import labs_examples.packages.labs.mystuff.*;
 
 /**
  * Packages Exercise 1: Protected modifier
@@ -9,3 +10,15 @@ package labs_examples.packages.labs;
  *      4) Demonstrate how the the protected access modifier restricts access from package to package
  *
  */
+
+class Example {
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+//        The method below cannot be called because it is protected in
+        calculator.divide(100, 5);
+        int x = calculator.addition(20, 15);
+        System.out.println(x);
+    }
+
+}
