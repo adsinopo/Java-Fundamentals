@@ -3,13 +3,14 @@ package labs_examples.static_nonstatic.labs;
 public class ClassOne {
     public static void main(String[] args) {
         // A static method calling another static method in the same class (call the method)
-        Nick();
+        ClassOne.Nick();
         // A static method calling a non-static method in the same class
         // (create an object, use the dot, call the method)
         ClassOne sameClass = new ClassOne();
         sameClass.Jon();
         // A static method calling a static method in another class
         // call the class, call the method
+//        int x = Math.
         int a = 12;
         int b = 5;
         int c = ClassTwo.addition(a, b);
@@ -23,14 +24,14 @@ public class ClassOne {
     public void nonStaticMethod(){
         // A non-static method calling a non-static method in the same class
         // (call the method)
-        Ryan();
+        this.Ryan();
         // A non-static method calling a non-static method in another class
         // (create an object in the new class, call the object, use the dot operator, call the method)
         ClassTwo obj = new ClassTwo();
         obj.division(10, 2);
         // A non-static method calling a static method in the same class
         // (just call the method)
-        Nick();
+        ClassOne.Nick();
         // A non-static method calling a static method in another class
         // (call the class, use the dot operator, call the method)
         ClassTwo.addition(10, 2);
