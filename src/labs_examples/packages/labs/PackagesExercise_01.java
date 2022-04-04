@@ -16,7 +16,7 @@ class Example {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
 //        The method below cannot be called because it is protected in
-        calculator.divide(100, 5);
+//        calculator.divide(100, 5);
         int x = calculator.addition(20, 15);
         System.out.println(x);
     }

@@ -7,6 +7,7 @@ public class Deck {
     //variable declared
     Card[] cards = new Card[52];
     ArrayList<Integer> usedCards;
+    static int numShuffles;
 
     public Deck() {
         this.cards = new Card[52];
@@ -22,6 +23,7 @@ public class Deck {
             }
         }
         this.usedCards = new ArrayList<Integer>();
+        numShuffles++;
     }
 
     public void deal(Player player) {
