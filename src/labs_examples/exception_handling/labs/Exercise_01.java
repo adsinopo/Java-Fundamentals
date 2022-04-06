@@ -7,3 +7,15 @@ package labs_examples.exception_handling.labs;
  *
  */
 
+class ExerciseOne {
+    public static void main(String[] args) {
+
+        int[] numbs = {2, 5, 9, 12};
+
+        try {
+            int x = numbs[8];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException caught");
+        }
+    }
+}
