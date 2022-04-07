@@ -1,7 +1,5 @@
 package labs_examples.exception_handling.labs;
 
-import java.util.Arrays;
-
 /**
  * Exception Handling Exercise 5:
  *
@@ -13,23 +11,14 @@ class Example {
 
     public static void main(String[] args) {
         try{
-            mathCheck();
+            int z = divide(12, 0);
         } catch (ArithmeticException exc){
-            System.out.println("printing in the main method");
+            System.out.println("exception caught");
         }
     }
 
-    public static void mathCheck() throws ArithmeticException{
-        anotherCheck();
-    }
-
-    public static void anotherCheck() throws ArithmeticException{
-        try{
-            int z = 4 / 0;
-        } catch (ArithmeticException exc){
-            System.out.println("Exception caught in anotherCheck");
-            throw exc;
-        }
+    public static int divide(int a, int b) throws ArithmeticException{
+        return a / b;
     }
 
 }
