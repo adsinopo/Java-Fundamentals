@@ -6,3 +6,8 @@ package labs_examples.exception_handling.labs;
  *      1) Create a custom exception.
  *      2) Demonstrate a method throwing your custom exception.
  */
+public class Driving {
+    public static void main(String[] args) {
+
+    }
+}
