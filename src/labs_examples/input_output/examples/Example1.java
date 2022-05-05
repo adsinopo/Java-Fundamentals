@@ -10,6 +10,8 @@ class ReadBytes {
 
         byte data[] = new byte[11];
 
+        // We have been using a byte stream this entire time
+        // with the SOUT print ln
         System.out.println("Enter some characters.");
 
         System.in.read(data);
